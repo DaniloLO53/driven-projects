@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body { overflow-x: hidden; }
+
+.greaterContainer {
+  position: absolute;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px 12px 30px;
+  font-size: 45px;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
+  background-color: palegoldenrod;
+  height: 80px;
+}
+
+main {
+  margin-top: 80px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+aside.message {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 36px 12px 36px 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+aside.message label {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 85%;
+}
+
+aside.message label div {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+aside.message label input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+aside.message label input::placeholder {
+  color: black;
+  font-style: italic;
+}
+
+aside.message ion-icon { font-size: 40px; }
+
+aside.message ion-icon:hover {
+  cursor: pointer;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+
+.sidebarWithBackdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.backdrop { width: 25vw; }
+
+aside.sidebar {
+  background-color: white;
+  position: relative;
+  width: 75%;
+  min-height: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.contacts, .visibility {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts .description, .visibility .description {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 25px 35px 25px 35px;
+  font-size: 16px;
+}
+
+.participantsButton, .visibilityButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 5px 3px 5px;
+}
+
+.participantsInfo, .visibilityInfo {
+  display: flex;
+  align-items: center;
+}
+
+.participantsInfo *, .visibilityInfo * { margin: 0 7px 0 7px; } 
+
+.participantsButton ion-icon, .visibilityButton ion-icon { font-size: 32px; }
+
+.participantsButton .check, .visibilityButton .check { color: green; }
+
+.pink { background-color: pink; }
+
+.gray { background-color: gray; }
+
+.hideCheck, .hideMessage { display: none; }
+
+.inactive {
+  transform: translateX(100vw);
+  transition: 0.2s ease;
+}
+
+.active {
+  transform: translateX(0);
+  transition: 0.2s ease;
+}
+
+.show {
+  animation-name: backdropShow;
+  animation-delay: 0.13s;
+  animation-fill-mode: forwards;
+}
+
+.hide {
+  animation-name: backdropHide;
+  animation-delay: 0.13s;
+  animation-fill-mode: forwards;
+}
+
+.loginContainer {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.loginContainer input {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: calc(50% - 80px);
+  transform: translateX(-50%);
+  padding: 15px 45px 15px 45px;
+  border: 1px solid #d7d7d7;
+}
+
+.loginContainer input::placeholder {
+  text-align: center;
+  font-size: 18px;
+}
+
+.loginContainer figure {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(50% - 220px);
+}
+
+.loginContainer button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e7e7e7;
+  font-size: 20px;
+}
+
+.hideLogin { display: none; }
+
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.messageBlock {
+  display: flex;
+  padding: 12px;
+  margin: 3px 0 3px 0;
+}
+
+.messageBlock * { margin: 0 3px 0 3px; }
+
+.messageTime { color: #aaaaaa; }
+
+.squareWrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  /* background-color: green; */
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  /* animation-delay: calc(var(data-i) * 1s); */
+  /* animation-delay: 10s; */
+}
+
+.square .miniSquare {
+  position: absolute;
+  /* width: 30px; */
+  /* height: 30px; */
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.square {
+  /* transform: translate(calc(attr(--index) * 10px)); */
+}
+
+@keyframes loading {
+  from {
+    width: 30px;
+    height: 30px;
+  }
+  to {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@keyframes backdropShow {
+  from { display: none; }
+
+  to {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes backdropHide {
+  from { display: initial; }
+
+  to { display: none; }
+}
