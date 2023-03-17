@@ -1,5 +1,10 @@
 
 <div>
+    <h2>My Driven Bootcamp Projects</h2>
+    <p>Here you can find all projects I did on my bootcamp. Some of there projects were made in groups, but most were done by myself.</p>
+</div>
+
+<div>
 <details>
     <summary>
       <h3>Fullstack MERN / PERN Projects</h3>
