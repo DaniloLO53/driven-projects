@@ -75,7 +75,6 @@
         <a href="https://github.com/DaniloLO53/driven-projects/tree/parrot-game">Parrot Game</a>
       </li>
       <li>
-        <a href="https://github.com/DaniloLO53/driven-projects/tree/batepapo-uol">Batepapo UOL</a>
       </li>
     </ul>
   </details>
