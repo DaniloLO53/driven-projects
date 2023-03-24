@@ -54,7 +54,7 @@
   
   <h3>:heavy_check_mark: Hardskills</h3>
   <li>
-    <strong>Uso de Proptypes</strong>: Nesse projeto utilizei pela primeira vez o Context API para gerenciamento de estados. Apesar da complexidade           inicial na curva de aprendizagem, consegui entender bem os conceitos. 
+    <strong>Uso do Context</strong>: Nesse projeto utilizei pela primeira vez o Context API para gerenciamento de estados. Apesar da complexidade           inicial na curva de aprendizagem, consegui entender bem os conceitos. 
   </li>
 </ul>
 
