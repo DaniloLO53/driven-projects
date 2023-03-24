@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center">Trackit</h1>
+<div align="center">
+  <img src="./src/assets/logo1.png" width="400" />
+  <img src="./src/assets/logo2.png" width="400" />
+  <img src="./src/assets/logo3.png" width="400" />
+  <img src="./src/assets/logo4.png" width="400" />
+  <img src="./src/assets/logo5.png" width="400" />
+  <img src="./src/assets/logo6.png" width="400" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br><br>
 
-## Available Scripts
+<!-- ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg) -->
+![status-in-progress](https://user-images.githubusercontent.com/97575616/153774620-d6a0a615-9d38-4402-ae72-20c52f8bbd5c.svg)
 
-In the project directory, you can run:
+<h2> :gear: Tecnologias utilizadas</h2>
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="35" />
+  <img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="35" />
+  <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=1572B6" alt="React logo" title="React" height="35" />
+  <img src="https://img.shields.io/badge/Eslint-282C34?logo=eslint&logoColor=purple" alt="Eslint logo" title="Eslint" height="35" />
+  <img src="https://img.shields.io/badge/Styled Components-282C34?logo=Styled Components&logoColor=white" alt="Styled Components logo" title="Styled       Components" height="35" />
+</div>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>:information_source: Descrição</h2>
+<p>
+  Projeto realizado durante o bootcamp Driven para treinar minhas habilidades nas tecnologias utilizadas.
+  <br>
+  Trata-se de um aplicativo para registrar hábitos semanais e diários.
+  <br>
+  O propósito desse projeto foi estudar sobre os states do React utilizando a hook UseEffect, além de realizar requisições pelo axios para uma API já
+  desenvolvida previamente. Além disso, fiz uso do Context API e utilizei pequenas libs como DayJS.
+  <br>
+  <strong>Para rodar a aplicação localmente:</strong>
+</p>
+<ol>
+   <li>Clone o repositório na sua máquina;</li>
+   <li>Na raíz do projeto, execute o comando <code>npm i</code> para instalar as dependências;</li>
+   <li>Rode o comando <code>npm start</code> para rodar a aplicação na porta 3000;</li>
+</ol>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+<h2>
+   :rage1: Principais desafios
+</h2>
+<ul>
+  <h3>:heavy_check_mark: Softskills</h3>
+  <li>
+    <strong>Gestão do tempo</strong>: Esse projeto levou cerca de 14 horas para ser concluído. Por ser um desafio mais complexo se comparados aos projeto     s anteriores, levei mais tempo para concluir.
+  </li>
+  
+  <h3>:heavy_check_mark: Hardskills</h3>
+  <li>
+    <strong>Uso de Proptypes</strong>: Nesse projeto utilizei pela primeira vez o Context API para gerenciamento de estados. Apesar da complexidade           inicial na curva de aprendizagem, consegui entender bem os conceitos. 
+  </li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>:blush: Entre em contato</h2>
 
-### `npm run build`
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
+[linkedin-url]: https://www.linkedin.com/in/danilo-leao-dev/
